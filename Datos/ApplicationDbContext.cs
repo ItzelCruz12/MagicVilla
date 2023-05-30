@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using MagicVillaApi.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace MagicVillaApi.Datos
 {
@@ -9,6 +10,9 @@ namespace MagicVillaApi.Datos
 
         }
         public DbSet<Villa> Villas { get; set; }
+        public DbSet<NumeroVilla> NumeroVillas { get; set; }
+
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
